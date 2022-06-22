@@ -5,30 +5,6 @@ import './index.css'
 import Card from "../components/Card/Card";
 import Header from "../components/Header/Header";
 
-const IndexPage = () => {
-  return (
-    <Container>
-      <Header></Header>
-      <Wrapper>
-        <MessageContainer>
-          <SubTitle>BLOG SNAPSHOT</SubTitle>
-          <HeroText>끊임없이 배우고 기록하며<br/>지식과 경험을 전달하기 위해 노력합니다. 🚀</HeroText>
-          <ButtonContainer>
-            <Button href="https://velog.io/@oneook" target="_blank">블로그 보러 가기</Button>
-          </ButtonContainer>
-        </MessageContainer>
-        <Section>
-          <CardContainer>
-            {cardDatas.map(data => <Card {...data} key={data.id} />)}
-          </CardContainer>
-        </Section>
-      </Wrapper>
-    </Container>
-  );
-};
-
-export default IndexPage;
-
 const Container = styled.main`
   background-color: #fff;
   font-family: "-apple-system, Roboto, sans-serif, serif";
@@ -109,6 +85,33 @@ const CardContainer = styled.ul`
     margin: 15px;
   }
 `
+
+
+
+const IndexPage = () => {
+  return (
+    <Container>
+      <Header></Header>
+      <Wrapper>
+        <MessageContainer>
+          <SubTitle>BLOG SNAPSHOT</SubTitle>
+          <HeroText>끊임없이 배우고 기록하며<br/>지식과 경험을 전달하기 위해 노력합니다. 🚀</HeroText>
+          <ButtonContainer>
+            <Button href="https://velog.io/@oneook" target="_blank">블로그 보러 가기</Button>
+          </ButtonContainer>
+        </MessageContainer>
+        <Section>
+          <CardContainer>
+            {cardDatas.map(data => <Card {...data} key={data.id} />)}
+          </CardContainer>
+        </Section>
+      </Wrapper>
+    </Container>
+  );
+};
+
+export default IndexPage;
+
 const cardDatas = [
   {
     id: 1,
