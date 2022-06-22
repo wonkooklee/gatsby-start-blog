@@ -86,25 +86,37 @@ const CardContainer = styled.ul`
   }
 `
 
-
-
 const IndexPage = () => {
   return (
     <Container>
       <Header></Header>
       <Wrapper>
-        <MessageContainer>
-          <SubTitle>BLOG SNAPSHOT</SubTitle>
-          <HeroText>끊임없이 배우고 기록하며<br/>지식과 경험을 전달하기 위해 노력합니다. 🚀</HeroText>
-          <ButtonContainer>
-            <Button href="https://velog.io/@oneook" target="_blank">블로그 보러 가기</Button>
-          </ButtonContainer>
-        </MessageContainer>
-        <Section>
-          <CardContainer>
-            {cardDatas.map(data => <Card {...data} key={data.id} />)}
-          </CardContainer>
-        </Section>
+        <div
+          data-sal="slide-left"
+          data-sal-duration="1000"
+          data-sal-delay="300"
+          data-sal-easing="ease"
+        >
+          <MessageContainer>
+            <SubTitle>BLOG SNAPSHOT</SubTitle>
+            <HeroText>끊임없이 배우고 기록하며<br/>지식과 경험을 전달하기 위해 노력합니다. 🚀</HeroText>
+            <ButtonContainer>
+              <Button href="https://velog.io/@oneook" target="_blank">블로그 보러 가기</Button>
+            </ButtonContainer>
+          </MessageContainer>
+        </div>
+        <div
+          data-sal="slide-up"
+          data-sal-duration="1000"
+          data-sal-delay="300"
+          data-sal-easing="ease"
+        >
+          <Section>
+            <CardContainer>
+              {cardDatas.map(data => <Card {...data} key={data.id} />)}
+            </CardContainer>
+          </Section>
+        </div>
       </Wrapper>
     </Container>
   );
