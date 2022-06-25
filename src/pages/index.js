@@ -4,7 +4,7 @@ import "./index.css";
 
 import Card from "../components/Card/Card";
 import Header from "../components/Header/Header";
-import Viewport from "../containers/ThreeJS/Viewport";
+import Hero from "../containers/ThreeJS/Hero";
 
 const Container = styled.main`
   background-color: #fff;
@@ -92,7 +92,7 @@ const IndexPage = () => {
   return (
     <Container>
       <Header></Header>
-      <Viewport></Viewport>
+      <Hero></Hero>
       <Wrapper>
         <MessageContainer>
           <SubTitle>BLOG SNAPSHOT</SubTitle>

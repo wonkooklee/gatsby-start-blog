@@ -28,6 +28,8 @@
     "gatsby-plugin-styled-components": "^5.17.0",
     "gatsby-source-filesystem": "^4.17.0",
     "gh-pages": "^4.0.0",
+    "gsap": "^3.10.4",
+    "maath": "^0.0.2",
     "math-random": "^2.0.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
