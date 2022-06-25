@@ -18,6 +18,8 @@
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
+    "@react-three/drei": "^9.14.3",
+    "@react-three/fiber": "^8.0.27",
     "babel-plugin-styled-components": "^2.0.7",
     "gatsby": "^4.16.0",
     "gatsby-plugin-google-analytics": "^4.17.0",
@@ -26,6 +28,7 @@
     "gatsby-plugin-styled-components": "^5.17.0",
     "gatsby-source-filesystem": "^4.17.0",
     "gh-pages": "^4.0.0",
+    "math-random": "^2.0.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "styled-components": "^5.3.5"
