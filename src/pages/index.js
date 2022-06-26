@@ -100,7 +100,7 @@ const IndexPage = () => {
           <MessageContainer>
             <Animator
               motion="slide-up"
-              dalay="200"
+              delay="200"
               easing="ease"
               duration="1000"
             >
@@ -122,7 +122,7 @@ const IndexPage = () => {
               {cardDatas.map((data, index) => (
                 <Animator
                   motion="slide-up"
-                  dalay={index * 100}
+                  delay={index * 100}
                   easing="ease"
                   duration="500"
                 >

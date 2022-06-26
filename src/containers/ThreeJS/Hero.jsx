@@ -2,12 +2,13 @@ import React from "react";
 import Viewport from "./Viewport";
 import styled from "styled-components";
 import Animator from "../../components/Event/Animator";
+import ScrollDown from "../../components/Lottie/ScrollDown";
 
 const Hero = () => {
   return (
     <Container>
       <ContentsWrapper>
-        <Animator motion="slide-up" easing="ease" duration="1500">
+        <Animator motion="slide-up" delay="1000" easing="ease" duration="1500">
           <MessageContainer>
             <SubTitle>GREETINGS</SubTitle>
             <HeroText>
@@ -25,6 +26,9 @@ const Hero = () => {
             </Paragraph>
           </MessageContainer>
         </Animator>
+        <LottieContainer>
+          <ScrollDown />
+        </LottieContainer>
       </ContentsWrapper>
       <Viewport />
     </Container>
@@ -80,4 +84,11 @@ const Paragraph = styled.p`
   font-weight: 300;
   letter-spacing: -0.5px;
   line-height: 1.67;
+`;
+
+const LottieContainer = styled.div`
+  position: fixed;
+  left: 50%;
+  bottom: 50px;
+  transform: translateX(-50%);
 `;
