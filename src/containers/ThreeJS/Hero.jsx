@@ -26,10 +26,10 @@ const Hero = () => {
             </Paragraph>
           </MessageContainer>
         </Animator>
-        <LottieContainer>
-          <ScrollDown />
-        </LottieContainer>
       </ContentsWrapper>
+      <LottieContainer>
+        <ScrollDown />
+      </LottieContainer>
       <Viewport />
     </Container>
   );
@@ -43,13 +43,15 @@ const Container = styled.div`
 
 const ContentsWrapper = styled.div`
   position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
   width: 100%;
   z-index: 300;
 `;
 
 const MessageContainer = styled.article`
   margin: 0 auto;
-  margin-top: 200px;
+  /* margin-top: 200px; */
   width: 1140px;
   padding: 0 15px;
 `;
@@ -91,4 +93,5 @@ const LottieContainer = styled.div`
   left: 50%;
   bottom: 50px;
   transform: translateX(-50%);
+  z-index: 1000;
 `;
