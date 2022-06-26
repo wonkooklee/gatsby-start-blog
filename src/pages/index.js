@@ -67,11 +67,12 @@ const Container = styled.main`
 
 const Wrapper = styled.div`
   margin: 0 auto;
+  padding: 150px 0;
   width: 1140px;
 `;
 
 const MessageContainer = styled.article`
-  margin-top: 140px;
+  /* margin-top: 140px; */
   padding: 0 15px;
   width: 1140px;
 `;
