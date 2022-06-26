@@ -5,6 +5,7 @@ import "./index.css";
 import Card from "../components/Card/Card";
 import Header from "../components/Header/Header";
 import Hero from "../containers/ThreeJS/Hero";
+import Animator from "../components/Event/Animator";
 
 const Container = styled.main`
   background-color: #fff;
@@ -95,19 +96,14 @@ const IndexPage = () => {
       <Hero></Hero>
       <Wrapper>
         <MessageContainer>
-          <div
-            data-sal="slide-up"
-            data-sal-delay="200"
-            data-sal-easing="ease"
-            data-sal-duration="1000"
-          >
+          <Animator motion="slide-up" dalay="200" easing="ease" duration="1000">
             <SubTitle>BLOG SNAPSHOT</SubTitle>
             <HeroText>
               끊임없이 배우고 기록하며
               <br />
               지식과 경험을 전달하기 위해 노력합니다. 🚀
             </HeroText>
-          </div>
+          </Animator>
           <ButtonContainer>
             <Button href="https://velog.io/@oneook" target="_blank">
               블로그 보러 가기
@@ -117,14 +113,14 @@ const IndexPage = () => {
         <Section>
           <CardContainer>
             {cardDatas.map((data, index) => (
-              <div
-                data-sal="slide-up"
-                data-sal-delay={index * 100}
-                data-sal-easing="ease"
-                data-sal-duration="500"
+              <Animator
+                motion="slide-up"
+                dalay={index * 100}
+                easing="ease"
+                duration="500"
               >
                 <Card {...data} key={data.id} />
-              </div>
+              </Animator>
             ))}
           </CardContainer>
         </Section>

@@ -27,7 +27,7 @@ function CameraController() {
       camera,
       { zoom: 100 },
       {
-        duration: 2,
+        duration: 1.5,
         zoom: 2,
         onUpdate: function () {
           camera.updateProjectionMatrix();
@@ -36,7 +36,7 @@ function CameraController() {
     );
 
     gsap.to(camera, {
-      duration: 2,
+      duration: 1.5,
       x: 10,
       y: 0,
       z: 0,
@@ -52,9 +52,9 @@ function CameraController() {
 function Stars(props) {
   const ref = useRef();
   const [sphere] = useState(() =>
-    random.inSphere(new Float32Array(6000), { radius: 2 })
+    random.inSphere(new Float32Array(6000), { radius: 1 })
   );
-  useFrame((state, delta) => {
+  useFrame((_, delta) => {
     ref.current.rotation.x -= delta / 20;
     ref.current.rotation.y -= delta / 30;
   });
