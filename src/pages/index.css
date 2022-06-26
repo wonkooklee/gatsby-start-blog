@@ -10,7 +10,7 @@ html, body, h1, h2, h3, h4 {
   margin: 0;
 }
 
-h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, span::selection, pre::selection, a::selection, img::selection, li::selection {
+h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, span::selection, pre::selection, a::selection, img::selection, li::selection, strong::selection {
   background: #00c68e;;
   color: #fff;
 }

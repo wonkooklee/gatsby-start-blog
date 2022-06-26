@@ -1,26 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import styled from "styled-components";
+import { useContext } from "react";
+import { ScrollContext } from "../../contexts/ScrollContext";
 
 const Header = () => {
-  const [isScrollTop, setIsScrollTop] = useState(true);
-
-  useEffect(() => {
-    if (typeof window !== `undefined`) {
-      window.onscroll = () => {
-        currentScrollPos(window.pageYOffset);
-      };
-    }
-
-    return currentScrollPos;
-  }, []);
-
-  const currentScrollPos = (offset) => {
-    if (offset > 0) {
-      setIsScrollTop(false);
-    } else {
-      setIsScrollTop(true);
-    }
-  };
+  const { isScrollTop } = useContext(ScrollContext);
 
   return (
     <StyledHeader

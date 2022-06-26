@@ -6,6 +6,7 @@ import Card from "../components/Card/Card";
 import Header from "../components/Header/Header";
 import Hero from "../containers/ThreeJS/Hero";
 import Animator from "../components/Event/Animator";
+import { ScrollProvider } from "../contexts/ScrollContext";
 
 const Container = styled.main`
   background-color: #fff;
@@ -91,41 +92,48 @@ const CardContainer = styled.ul`
 
 const IndexPage = () => {
   return (
-    <Container>
-      <Header></Header>
-      <Hero></Hero>
-      <Wrapper>
-        <MessageContainer>
-          <Animator motion="slide-up" dalay="200" easing="ease" duration="1000">
-            <SubTitle>BLOG SNAPSHOT</SubTitle>
-            <HeroText>
-              끊임없이 배우고 기록하며
-              <br />
-              지식과 경험을 전달하기 위해 노력합니다. 🚀
-            </HeroText>
-          </Animator>
-          <ButtonContainer>
-            <Button href="https://velog.io/@oneook" target="_blank">
-              블로그 보러 가기
-            </Button>
-          </ButtonContainer>
-        </MessageContainer>
-        <Section>
-          <CardContainer>
-            {cardDatas.map((data, index) => (
-              <Animator
-                motion="slide-up"
-                dalay={index * 100}
-                easing="ease"
-                duration="500"
-              >
-                <Card {...data} key={data.id} />
-              </Animator>
-            ))}
-          </CardContainer>
-        </Section>
-      </Wrapper>
-    </Container>
+    <ScrollProvider>
+      <Container>
+        <Header></Header>
+        <Hero></Hero>
+        <Wrapper>
+          <MessageContainer>
+            <Animator
+              motion="slide-up"
+              dalay="200"
+              easing="ease"
+              duration="1000"
+            >
+              <SubTitle>BLOG SNAPSHOT</SubTitle>
+              <HeroText>
+                끊임없이 배우고 기록하며
+                <br />
+                지식과 경험을 전달하기 위해 노력합니다. 🚀
+              </HeroText>
+            </Animator>
+            <ButtonContainer>
+              <Button href="https://velog.io/@oneook" target="_blank">
+                블로그 보러 가기
+              </Button>
+            </ButtonContainer>
+          </MessageContainer>
+          <Section>
+            <CardContainer>
+              {cardDatas.map((data, index) => (
+                <Animator
+                  motion="slide-up"
+                  dalay={index * 100}
+                  easing="ease"
+                  duration="500"
+                >
+                  <Card {...data} key={data.id} />
+                </Animator>
+              ))}
+            </CardContainer>
+          </Section>
+        </Wrapper>
+      </Container>
+    </ScrollProvider>
   );
 };
 

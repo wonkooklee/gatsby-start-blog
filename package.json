@@ -33,6 +33,7 @@
     "math-random": "^2.0.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-lottie": "^1.2.3",
     "styled-components": "^5.3.5",
     "three": "^0.141.0"
   }
