@@ -6,14 +6,21 @@ const Hero = () => {
   return (
     <Container>
       <ContentsWrapper>
-        <MessageContainer>
-          <SubTitle>GREETINGS</SubTitle>
-          <HeroText>
-            안녕하세요 저는 이원국입니다
-            <br />
-            지식과 경험을 전달하기 위해 노력합니다. 🚀
-          </HeroText>
-        </MessageContainer>
+        <div
+          data-sal="slide-up"
+          data-sal-delay="500"
+          data-sal-easing="ease"
+          data-sal-duration="1000"
+        >
+          <MessageContainer>
+            <SubTitle>GREETINGS</SubTitle>
+            <HeroText>
+              안녕하세요 저는 이원국입니다
+              <br />
+              지식과 경험을 전달하기 위해 노력합니다. 🚀
+            </HeroText>
+          </MessageContainer>
+        </div>
       </ContentsWrapper>
       <Viewport />
     </Container>

@@ -95,12 +95,19 @@ const IndexPage = () => {
       <Hero></Hero>
       <Wrapper>
         <MessageContainer>
-          <SubTitle>BLOG SNAPSHOT</SubTitle>
-          <HeroText>
-            끊임없이 배우고 기록하며
-            <br />
-            지식과 경험을 전달하기 위해 노력합니다. 🚀
-          </HeroText>
+          <div
+            data-sal="slide-up"
+            data-sal-delay="200"
+            data-sal-easing="ease"
+            data-sal-duration="1000"
+          >
+            <SubTitle>BLOG SNAPSHOT</SubTitle>
+            <HeroText>
+              끊임없이 배우고 기록하며
+              <br />
+              지식과 경험을 전달하기 위해 노력합니다. 🚀
+            </HeroText>
+          </div>
           <ButtonContainer>
             <Button href="https://velog.io/@oneook" target="_blank">
               블로그 보러 가기
@@ -109,8 +116,15 @@ const IndexPage = () => {
         </MessageContainer>
         <Section>
           <CardContainer>
-            {cardDatas.map((data) => (
-              <Card {...data} key={data.id} />
+            {cardDatas.map((data, index) => (
+              <div
+                data-sal="slide-up"
+                data-sal-delay={index * 100}
+                data-sal-easing="ease"
+                data-sal-duration="500"
+              >
+                <Card {...data} key={data.id} />
+              </div>
             ))}
           </CardContainer>
         </Section>
