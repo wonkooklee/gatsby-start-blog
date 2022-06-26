@@ -20,10 +20,17 @@ const Header = () => {
             <LinkWrapper href="#">소개</LinkWrapper>
           </Nav>
           <Nav>
-            <LinkWrapper href="#">이력</LinkWrapper>
+            <LinkWrapper
+              href="https://www.linkedin.com/in/wonkook"
+              target="_blank"
+            >
+              이력
+            </LinkWrapper>
           </Nav>
           <Nav>
-            <LinkWrapper href="#">블로그</LinkWrapper>
+            <LinkWrapper href="https://velog.io/@oneook" target="_blank">
+              블로그
+            </LinkWrapper>
           </Nav>
         </NavList>
       </NavContainer>
