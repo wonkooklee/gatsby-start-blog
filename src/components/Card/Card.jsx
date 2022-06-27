@@ -30,6 +30,10 @@ const Container = styled.li`
   &:hover {
     transform: scale(1.02);
   }
+
+  @media (max-width: 799px) {
+    width: auto;
+  }
 `
 
 const LinkWrapper = styled.a`
@@ -42,6 +46,10 @@ const Image = styled.img`
   width: 100%;
   height: 193px;
   object-fit: cover;
+
+  @media (max-width: 799px) {
+    height: 160px;
+  }
 `;
 
 const Info = styled.div`
@@ -71,6 +79,11 @@ const Title = styled.h2`
   line-height: 1.5;
   margin-bottom: 20px;
   overflow: hidden;
+
+  @media (max-width: 799px) {
+    font-size: 16px;
+    margin-bottom: initial;
+  }
 `
 
 const Contents = styled.p`
@@ -88,6 +101,12 @@ const Contents = styled.p`
   margin-bottom: 30px;
   opacity: 1;
   overflow: hidden;
+
+  @media (max-width: 799px) {
+    font-size: 14px;
+    margin: initial;
+    height: 75px;
+  }
 `
 
 const Footer = styled.p`

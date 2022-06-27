@@ -54,6 +54,10 @@ const MessageContainer = styled.article`
   /* margin-top: 200px; */
   width: 1140px;
   padding: 0 15px;
+
+  @media (max-width: 799px) {
+    width: initial;
+  }
 `;
 
 const SubTitle = styled.p`
@@ -63,6 +67,10 @@ const SubTitle = styled.p`
   letter-spacing: 1px;
   line-height: 1.5;
   margin-bottom: 20px;
+
+  @media (max-width: 799px) {
+    /* font-size: 12px; */
+  }
 `;
 
 const HeroText = styled.h1`
@@ -73,6 +81,12 @@ const HeroText = styled.h1`
   letter-spacing: -0.5px;
   line-height: 1.28;
   word-break: keep-all;
+
+  @media (max-width: 799px) {
+    margin-bottom: 34px;
+    font-size: 23px;
+    word-break: break-all;
+  }
 `;
 
 const Underline = styled.strong`
@@ -86,6 +100,11 @@ const Paragraph = styled.p`
   font-weight: 300;
   letter-spacing: -0.5px;
   line-height: 1.67;
+
+  @media (max-width: 799px) {
+    font-size: 14px;
+    word-break: break-all;
+  }
 `;
 
 const LottieContainer = styled.div`

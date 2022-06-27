@@ -65,6 +65,11 @@ const Wrapper = styled.div`
   margin: 0 auto;
   padding: 150px 20px;
   width: 1140px;
+
+  @media (max-width: 799px) {
+    width: initial;
+    padding: 80px 20px;
+  }
 `;
 
 const Heading = styled.div`
@@ -73,6 +78,10 @@ const Heading = styled.div`
 
   & > * {
     flex-shrink: 0;
+  }
+
+  @media (max-width: 799px) {
+    display: block;
   }
 `;
 
@@ -86,6 +95,11 @@ const Contents = styled.div`
   grid-template-columns: 1fr 1fr;
   gap: 100px;
   row-gap: 40px;
+
+  @media (max-width: 799px) {
+    margin-top: initial;
+    display: block;
+  }
 `;
 
 const subData = [

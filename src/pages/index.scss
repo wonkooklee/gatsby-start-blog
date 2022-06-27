@@ -26,3 +26,9 @@ a:active {
   color: black;
   text-decoration: none;
 }
+
+@mixin mobile {
+  @media (max-width: 799px) {
+    @content;
+  }
+}

@@ -55,6 +55,11 @@ const StyledHeader = styled.header`
   backdrop-filter: ${({ transparency }) =>
     transparency ? "blur(2px)" : "initial"};
   transition: background-color 0.5s;
+
+  @media (max-width: 799px) {
+    padding: 0 20px;
+    backdrop-filter: none;
+  }
 `;
 
 const BlogTitleContainer = styled.div``;
@@ -67,17 +72,36 @@ const BlogTitle = styled.h1`
   .transparent & {
     color: #fff;
   }
+
+  @media (max-width: 799px) {
+    font-size: 22px;
+  }
 `;
 
-const NavContainer = styled.nav``;
+const NavContainer = styled.nav`
+  @media (max-width: 799px) {
+    position: relative;
+    flex-grow: 1;
+  }
+`;
 
 const NavList = styled.ul`
   display: flex;
   margin-left: 46px;
+
+  @media (max-width: 799px) {
+    margin-left: 30px;
+    justify-content: flex-end;
+  }
 `;
 
 const Nav = styled.li`
   margin-right: 35px;
+
+  @media (max-width: 799px) {
+    margin-left: 20px;
+    margin-right: initial
+  }
 `;
 
 const LinkWrapper = styled.a`
@@ -86,5 +110,9 @@ const LinkWrapper = styled.a`
   cursor: pointer;
   .transparent & {
     color: #fff;
+  }
+
+  @media (max-width: 799px) {
+    font-size: 12px;
   }
 `;

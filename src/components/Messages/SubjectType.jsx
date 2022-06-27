@@ -13,7 +13,11 @@ const SubjectType = ({ children, title, caption }) => {
 
 export default SubjectType;
 
-const Container = styled.div``;
+const Container = styled.div`
+  @media (max-width: 799px) {
+    margin-top: 30px;
+  }
+`;
 
 const Header = styled.h3`
   margin: 0px;
@@ -26,6 +30,12 @@ const Header = styled.h3`
   letter-spacing: -0.5px;
   line-height: 1.28;
   word-break: keep-all;
+
+  @media (max-width: 799px) {
+    padding-top: 20px;
+    font-size: 18px;
+    border-top: 1px solid #999;
+  }
 `;
 
 const Caption = styled.p`
@@ -35,6 +45,10 @@ const Caption = styled.p`
   font-weight: 300;
   letter-spacing: -0.5px;
   line-height: 1.67;
+
+  @media (max-width: 799px) {
+    font-size: 14px;
+  }
 `;
 
 const Paragraph = styled.p`
@@ -44,4 +58,10 @@ const Paragraph = styled.p`
   letter-spacing: -0.5px;
   line-height: 1.8;
   word-break: keep-all;
+  
+  @media (max-width: 799px) {
+    font-size: 14px;
+    width: 100%;
+    word-break: break-all;
+  }
 `;

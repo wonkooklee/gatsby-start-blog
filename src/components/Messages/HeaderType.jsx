@@ -22,6 +22,12 @@ const HeroText = styled.h1`
   letter-spacing: -0.5px;
   line-height: 1.28;
   word-break: keep-all;
+
+  @media (max-width: 799px) {
+    margin-bottom: 50px;
+    margin-right: 18px;
+    font-size: 23px;
+  }
 `;
 
 const SubTitle = styled.p`

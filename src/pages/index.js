@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
 import { ScrollProvider } from "../contexts/ScrollContext";
-import "./index.css";
+import "./index.scss";
 
 import Card from "../components/Card/Card";
 import Header from "../components/Header/Header";
@@ -69,12 +69,21 @@ const Wrapper = styled.div`
   margin: 0 auto;
   padding: 150px 0;
   width: 1140px;
+
+  @media (max-width: 799px) {
+    width: initial;
+    padding: 100px 0;
+  }
 `;
 
 const MessageContainer = styled.article`
   /* margin-top: 140px; */
   padding: 0 15px;
   width: 1140px;
+
+  @media (max-width: 799px) {
+    width: initial;
+  }
 `;
 
 const SubTitle = styled.p`
@@ -94,6 +103,12 @@ const HeroText = styled.h1`
   letter-spacing: -0.5px;
   line-height: 1.28;
   word-break: keep-all;
+
+  @media (max-width: 799px) {
+    margin-bottom: 50px;
+    margin-right: 18px;
+    font-size: 23px;
+  }
 `;
 
 const ButtonContainer = styled.div``;
@@ -123,6 +138,13 @@ const Button = styled.a`
     background-color: #00c68e;
     color: #fff;
   }
+
+  @media (max-width: 799px) {
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    width: 150px;
+  }
 `;
 
 const Section = styled.section`
@@ -137,8 +159,19 @@ const CardContainer = styled.ul`
   margin: 0;
   width: 1140px;
 
+  @media (max-width: 799px) {
+    padding: 0 20px;
+    width: initial;
+    display: block;
+  }
+
   li {
     margin: 15px;
+
+    @media (max-width: 799px) {
+      margin: initial;
+      margin-bottom: 20px;
+    }
   }
 `;
 
