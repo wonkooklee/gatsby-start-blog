@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Helmet } from 'react-helmet'
 import styled from "styled-components";
 import { ScrollProvider } from "../contexts/ScrollContext";
 import "./index.scss";
@@ -12,6 +13,11 @@ import Mission from "../containers/Mission";
 const IndexPage = () => {
   return (
     <ScrollProvider>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>WONKOOK LEE | Frontend Engineer</title>
+        <link rel="canonical" href="https://wonkooklee.github.io/gatsby-start-blog/" />
+      </Helmet>
       <Container>
         <Header />
         <Hero />
