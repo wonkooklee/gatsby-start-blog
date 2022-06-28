@@ -1,6 +1,7 @@
 import React from "react";
-import Viewport from "./Viewport";
+import scrollTo from 'gatsby-plugin-smoothscroll';
 import styled from "styled-components";
+import Viewport from "./Viewport";
 import Animator from "../../components/Event/Animator";
 import ScrollDown from "../../components/Lottie/ScrollDown";
 
@@ -27,7 +28,7 @@ const Hero = () => {
           </MessageContainer>
         </Animator>
       </ContentsWrapper>
-      <LottieContainer>
+      <LottieContainer onClick={() => scrollTo('#mission')}>
         <ScrollDown />
       </LottieContainer>
       <Viewport />
@@ -113,4 +114,24 @@ const LottieContainer = styled.div`
   bottom: 50px;
   transform: translateX(-50%);
   z-index: 1000;
+  cursor: pointer;
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  &:hover::after {
+    opacity: 0.1;
+  }
 `;

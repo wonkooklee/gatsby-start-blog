@@ -21,6 +21,7 @@ module.exports = {
         once: true,
       },
     },
-    'gatsby-plugin-sass'
+    'gatsby-plugin-sass',
+    'gatsby-plugin-smoothscroll'
   ],
 };

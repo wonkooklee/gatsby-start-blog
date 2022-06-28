@@ -8,7 +8,7 @@ import Animator from "../components/Event/Animator";
 
 const Mission = () => {
   return (
-    <Container>
+    <Container id="mission">
       <Wrapper>
         <Animator
           motion="slide-up"
