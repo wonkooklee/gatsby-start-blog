@@ -15,7 +15,7 @@ const IndexPage = () => {
     <ScrollProvider>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>WONKOOK LEE | Frontend Engineer</title>
+        <title>WONKOOK LEE | Frontend Engineer (WIP)</title>
         <link rel="canonical" href="https://wonkooklee.github.io/gatsby-start-blog/" />
       </Helmet>
       <Container>
