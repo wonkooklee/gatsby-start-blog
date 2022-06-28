@@ -113,7 +113,7 @@ const subData = [
   },
   {
     title: "QUICK LEARNER ⚡",
-    caption: "주변의 문제는 내가 해결한다",
+    caption: "배움을 두려워하지 않는다",
     content: `인턴 과정에서, Serverless Framework로 AWS 인프라 프로비저닝 및 GCP
 모바일 알림 기능 파이프라인의 초기 프로토타입 구현의 핵심적인 역할을
 수행한 경험이 있습니다. 주어진 일을 해결하기 위해 분야가 다른 난제가
