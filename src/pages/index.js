@@ -9,6 +9,7 @@ import Header from "../components/Header/Header";
 import Hero from "../containers/ThreeJS/Hero";
 import Animator from "../components/Event/Animator";
 import Mission from "../containers/Mission";
+import Copyrights from "../containers/copyrights/Copyrights";
 
 const IndexPage = () => {
   return (
@@ -59,6 +60,7 @@ const IndexPage = () => {
           </Section>
         </Wrapper>
       </Container>
+      <Copyrights />
     </ScrollProvider>
   );
 };
